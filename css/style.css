@@ -12,7 +12,7 @@
   --logo-font-family: 'Raleway', sans-serif;
   --main-font-family: 'Roboto', sans-serif;
   --main-letter-spacing: 0.03em;
-  --container-padding: 95px 15px;
+  --container-padding: 95px;
 }
 
 body {
@@ -54,7 +54,8 @@ img {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: var(--container-padding);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .visually-hidden {
@@ -109,12 +110,12 @@ img {
 
 .header {
   border-bottom: var(--header-footer-border);
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .header > .container {
   display: flex;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .header-nav {
@@ -156,6 +157,9 @@ img {
 }
 
 .contact-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--second-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -171,14 +175,11 @@ img {
 
 /* <<<========= HERO =========>>> */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--secondary-bg-color);
 
   text-align: center;
-}
-
-.hero > .container {
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -220,6 +221,11 @@ img {
 
 /* <<<========= ADVANTAGES =========>>> */
 
+.advantages-section {
+  padding-top: var(--container-padding);
+  padding-bottom: var(--container-padding);
+}
+
 .advantages-list {
   display: flex;
 }
@@ -251,9 +257,9 @@ img {
 
 /* <<<========= ABOUT =========>>> */
 
-.about-section > .container {
+.about-section {
   padding-top: 0;
-  padding-bottom: 95px;
+  padding-bottom: var(--container-padding);
 }
 
 .about-img-list {
@@ -272,6 +278,8 @@ img {
 
 /* <<<========= TEAM =========>>> */
 .team-section {
+  padding-top: var(--container-padding);
+  padding-bottom: var(--container-padding);
   background-color: var(--team-bg-color);
 }
 
@@ -280,7 +288,7 @@ img {
 }
 
 .team-item {
-  flex-basis: calc((100% - 30) / 4);
+  flex-basis: calc((100% - 30px) / 4);
 }
 
 .team-item:not(:last-child) {
@@ -289,6 +297,7 @@ img {
 
 .team-item-container {
   padding: 30px 59px;
+  background-color: #ffffff;
 }
 
 .team-name-worker {
@@ -310,13 +319,10 @@ img {
 
 /* <<<========= FOOTER =========>>> */
 .footer {
-  background-color: var(--secondary-bg-color);
-  border-top: var(--header-footer-border);
-}
-
-.footer > .container {
   padding-top: 60px;
   padding-bottom: 60px;
+  border-top: var(--header-footer-border);
+  background-color: var(--secondary-bg-color);
 }
 
 .footer-logo {
@@ -327,9 +333,15 @@ img {
 }
 
 .footer-location {
+  margin-bottom: 9px;
+
   color: var(--primary-white-color);
   font-size: 14px;
   line-height: 1.71;
+}
+
+.footer-contact-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-contact-link {
@@ -340,6 +352,11 @@ img {
 /* <<<========= END FOOTER =========>>> */
 
 /* <<<========= PORTFOLIO =========>>> */
+
+.portfolio-section {
+  padding-top: var(--container-padding);
+  padding-bottom: var(--container-padding);
+}
 
 .filter-list {
   display: flex;
@@ -378,14 +395,14 @@ img {
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .card-item {
-  flex-basis: calc(100% / 3 - 30);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .card-container {
